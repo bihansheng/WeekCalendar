@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 点击状态下的效果 -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/color_f0"/>
+            <size
+                android:height="10dp"
+                android:width="10dp" />
+        </shape>
+    </item>
+    <!-- 选中状态下的效果 -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/color_green"/>
+            <size
+                android:height="10dp"
+                android:width="10dp" />
+        </shape>
+    </item>
+    <!-- 正常状态下(非点击)的效果 -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/color_white"/>
+            <size
+                android:height="10dp"
+                android:width="10dp" />
+        </shape>
+    </item>
+
+</selector>
+

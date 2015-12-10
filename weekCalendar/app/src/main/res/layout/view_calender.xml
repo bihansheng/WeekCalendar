@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+    >
+
+    <View
+        style="@style/line_horizontal"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/my_calendar_padding"
+        android:paddingRight="@dimen/my_calendar_padding">
+
+        <RelativeLayout
+            android:id="@+id/iv_previous"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                style="@style/my_Calendar_button"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/arrow_left"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_year_mouth"
+            style="@style/my_Calendar_month"
+            tools:text="2015年9月"
+            />
+    <RelativeLayout
+        android:id="@+id/iv_next"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            style="@style/my_Calendar_button"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/arrow_right"
+            />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- 星期  日期-->
+    <ViewFlipper
+        android:id="@+id/rv_day"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/my_calendar_day_padding_vertical"
+        android:paddingTop="@dimen/my_calendar_day_padding_vertical"
+        />
+
+</LinearLayout>
+
